@@ -1,0 +1,13 @@
+@media screen and (min-width: 768px){
+    .course{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .course__content{
+        grid-column: 2/3;
+    }
+}
+
+.course__content{
+    color: white;
+}

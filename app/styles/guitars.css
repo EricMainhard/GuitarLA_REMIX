@@ -1,0 +1,61 @@
+.guitars__grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.guitar{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+.guitar__image {
+    display: block;
+    margin: 0 auto;
+}
+
+.guitar__name{
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.guitar__price{
+    color: var(--primary);
+    font-weight: 900;
+}
+
+.guitar__desc{
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.singleGuitar__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.singleGuitar__form select{
+    text-align: center;
+}
+
+.singleGuitar__form input[type="submit"]{
+    border: none;
+    background: black;
+    color: white;
+    padding: 1.3rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 550px){
+    .guitar{
+        grid-template-columns: 2fr 1fr;
+    }
+    .singleGuitar__form{
+        width: 50%;
+    }
+}

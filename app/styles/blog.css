@@ -1,0 +1,22 @@
+.blog{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 4rem;
+}
+
+.post__title{
+    margin: 0;
+}
+
+.post__date{
+    font-size: 1.4rem;
+    color: var(--primary);
+    margin: 0;
+}
+
+.post__text{
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+}
